@@ -1,18 +1,22 @@
 <html>
-    <head>
+  <head> </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a survey for for microverse trail</p>
 
-    </head>
-    <body>
-        <h1 id="title">Survey Form</h1>
-        <p id="description">This is a survey for for microverse trail</p>
-
-        <form id="survey-form">
-            <p>Name: </p>
-            <input name="name" id="name" required />
-            <p>Email: </p>
-            <input name="email" type="email" id="email" required />
-            <p>Age (optional):</p>
-            <input type="number" min="10" max="100" id="number" />
-        </form>
-    </body>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name: </label>
+      <input name="name" id="name" placeholder="Enter your Name" required />
+      <label for="email" id="email-label">Email: </label>
+      <input
+        name="email"
+        type="email"
+        id="email"
+        placeholder="Enter Your Email"
+        required
+      />
+      <label for="age" id="number-label">Age (optional):</label>
+      <input type="number" min="10" max="99" id="number" placeholder="Age" />
+    </form>
+  </body>
 </html>
